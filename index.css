@@ -1,3 +1,58 @@
 body {
     margin: 0;
+    text-align: start;
+
+    padding: 50px;
+
+    background-color: #1F2937;
+    border: 2px dotted white;
+    font-family: 'Inter', sans-serif;
+
+    color: gray;
+}
+
+button {
+    cursor: pointer;
+    border-radius: 10px;
+
+    height: 40px;
+    padding: 9px 15px;
+
+    font-size: medium;
+    font-weight: 400;
+
+}
+
+#Title-wrapper {
+    border: 2px solid white;
+
+    padding: 10px
+
+}
+
+
+#line1 {
+    font-weight: 900;
+    font-size: 32px;
+    color: white;
+
+    margin-bottom: 0px;
+}
+
+#line2 {
+    font-weight: 900;
+    font-size: 32px;
+    color: #10B981;
+
+    margin-top: 2px;
+    margin-bottom: 0px;
+    
+}
+
+
+#paragraph1 {
+    font-weight: 100;
+    font-size: 16px;
+
+    margin-top: 15px;
 }
