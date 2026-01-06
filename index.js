@@ -17,17 +17,24 @@ const characters = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O"
     });
 
     suggest1.addEventListener("click", function() {
-        copyToClipboard(suggest1.textContent);
+        handleCopy(suggest1);
     });
 
+    
     suggest2.addEventListener("click", function() {
-        copyToClipboard(suggest2.textContent);
+        handleCopy(suggest2);
     });
 
-    function copyToClipboard(text) {
-        navigator.clipboard.writeText(text).then(function() {
-            alert("Password copied to clipboard: " + text);
-        })};
+    function handleCopy(buttonEl) {
+        let orginialText = buttonEl.textContent;
+
+        navigator.clipboard.writeText(orginialText).then(function() {
+            buttonEl.textContent = "Copied!";
+            setTimeout(function() {
+                buttonEl.textContent = orginialText;
+            }, 1500);
+        });
+    };
 
 
     function generateRandomPassword() {
