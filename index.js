@@ -20,11 +20,12 @@ const characters = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O"
         handleCopy(suggest1);
     });
 
-    
+
     suggest2.addEventListener("click", function() {
         handleCopy(suggest2);
     });
 
+    
     function handleCopy(buttonEl) {
         let orginialText = buttonEl.textContent;
 
