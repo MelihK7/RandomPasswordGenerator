@@ -2,7 +2,7 @@ body {
     margin: 0;
     text-align: start;
 
-    padding: 50px;
+    padding: 52px;
 
     background-color: #1F2937;
     border: 2px dotted white;
@@ -24,10 +24,7 @@ button {
 }
 
 #Title-wrapper {
-    border: 2px solid white;
-
     padding: 10px
-
 }
 
 
@@ -44,7 +41,7 @@ button {
     font-size: 32px;
     color: #10B981;
 
-    margin-top: 2px;
+    margin-top: 3px;
     margin-bottom: 0px;
     
 }
@@ -54,5 +51,62 @@ button {
     font-weight: 100;
     font-size: 16px;
 
-    margin-top: 15px;
+    margin-top: 13px;
+    margin-bottom: 51px;
+}
+
+#line {
+    width: 100%;
+    height: 2px;
+
+    margin-top: 35px;
+    border-radius: 15px;
+
+    background-color: #2F3E53;
+
+}
+
+#GeneratePassword-el{
+    color: var(--white, #FFF);
+
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+
+    padding: 9px 15px;
+    border: none;
+
+    border-radius: 6px;
+    background: #10B981;
+    /* shadow/sm */
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+#suggest1 {
+    margin-top: 35px;
+    margin-right: 24px;
+    background-color: #273549;
+    border: none;
+
+    border-radius: 6px;
+
+    width: 211px;
+    height: 39px;
+
+    color: #10B981;
+}
+
+
+#suggest2 {
+    margin-top: 35px;
+    margin-left: 0px;
+    background-color: #273549;
+    border: none;
+
+    border-radius: 6px;
+
+    width: 211px;
+    height: 39px;
+
+    color: #10B981;
 }
