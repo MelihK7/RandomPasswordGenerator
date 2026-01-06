@@ -9,12 +9,26 @@ const characters = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O"
 
     let generateButton = document.getElementById("GeneratePassword-el")
 
+    let suggest1 = document.getElementById("suggest1")
+    let suggest2 = document.getElementById("suggest2")
 
     generateButton.addEventListener("click", function() { 
         generateRandomPassword();
     });
 
-  
+    suggest1.addEventListener("click", function() {
+        copyToClipboard(suggest1.textContent);
+    });
+
+    suggest2.addEventListener("click", function() {
+        copyToClipboard(suggest2.textContent);
+    });
+
+    function copyToClipboard(text) {
+        navigator.clipboard.writeText(text).then(function() {
+            alert("Password copied to clipboard: " + text);
+        })};
+
 
     function generateRandomPassword() {
 
@@ -35,6 +49,7 @@ const characters = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O"
     function randomNumber() {
         return Math.floor(Math.random() * characters.length);
     }
+
 
 
 
